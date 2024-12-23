@@ -14,4 +14,4 @@ RUN npm install
 COPY ../ .
 
 # Ejecuta la interfaz de Cypress
-CMD ["npx", "cypress", "run"]
+CMD ["npx", "cypress", "open"]

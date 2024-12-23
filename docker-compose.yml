@@ -6,3 +6,12 @@ services:
       dockerfile: cypress/Dockerfile
     volumes:
       - .:/app
+    environment:
+      - DISPLAY=host.docker.internal:0  # Necesario para mostrar la interfaz gráfica
+    networks:
+      - shared_network
+
+networks:
+  shared_network:
+    name: teraentrenamiento_network
+    driver: bridge

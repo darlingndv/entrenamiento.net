@@ -3,7 +3,7 @@
 describe('ejemplo de click', () =>{
     it("Click", () =>{
         cy.viewport(1920, 1080) // Set viewport to 550px x 750px
-        cy.visit('http://localhost:8081/')
+        cy.visit('host.docker.internal:8081')
         cy.wait(3000)
         cy.get('.nav-item > .header-nav-a-link').should("be.visible").click()
         cy.wait(3000)
