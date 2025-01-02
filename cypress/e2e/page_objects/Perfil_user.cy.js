@@ -1,15 +1,16 @@
-import login_admin from '../../support/page_objects_models/login_admin.cy'
+import Perfil_user from '../../support/page_objects_models/Perfil_user.cy'
 /// <reference types="cypress" />
 
 describe('Page objects Models', () =>{
 
-    const master=new login_admin()
+    const master=new Perfil_user()
 
     master.VisitHome()
 
     it("Test login", () =>{
         master.credenciales_validas()
+        master.credenciales_validas_normal()
     })
 
 
-})// cirerre describe
+})// cierre describe
