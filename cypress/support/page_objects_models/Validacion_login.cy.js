@@ -44,9 +44,7 @@ cerrar_sesion(){
     let tiempo=1000
     cy.get("#settingsDropdown").should("be.visible").click()
     cy.wait(tiempo)
-    cy.get(".dropdown-item").should("be.visible").click()
-    cy.wait(tiempo)
-    cy.get(".profile-logout-btn").should("be.visible").click()
+    cy.get(':nth-child(2) > .dropdown-item').should("be.visible").click()
     cy.wait(tiempo)
 }
 
