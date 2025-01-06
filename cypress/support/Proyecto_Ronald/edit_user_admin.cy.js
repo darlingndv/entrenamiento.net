@@ -13,7 +13,7 @@ class edit_user_admin {
 
 
 //Editar usuarios con perfil admin
-Editar_user_admin(){
+edit_user_admin(){
     let tiempo=1000
     cy.get("#Email").clear().should("be.visible").click().type("adminuser@gmail.com")
     cy.wait(tiempo)
@@ -45,4 +45,4 @@ Editar_user_admin(){
 
 }//final
 
-export default edit_user;
+export default edit_user_admin;
