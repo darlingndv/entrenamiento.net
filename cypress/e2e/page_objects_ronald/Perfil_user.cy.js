@@ -7,7 +7,7 @@ describe('Page objects Models', () =>{
 
     master.VisitHome()
 
-    it("Test login", () =>{
+    it("Ingresar a la página con diferentes perfiles de usuario", () =>{
         master.credenciales_validas()
         master.credenciales_validas_normal()
     })

@@ -7,7 +7,7 @@ describe('Page objects Models', () =>{
 
     master.VisitHome()
 
-    it("Test login", () =>{
+    it("Editar usuarios con perfil no admin", () =>{
         master.Editar_user_no_admin()
     })
 

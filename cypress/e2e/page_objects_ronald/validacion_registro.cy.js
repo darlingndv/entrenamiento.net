@@ -7,7 +7,7 @@ describe('Page objects Models', () =>{
 
     master.VisitHome()
 
-    it("Test registro", () =>{
+    it("Registrarse en el página", () =>{
         master.Registro_validacion()
         master.Registro_existente()
     })
