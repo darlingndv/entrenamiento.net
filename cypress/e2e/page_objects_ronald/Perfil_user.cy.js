@@ -1,4 +1,4 @@
-import Perfil_user from '../../support/page_objects_models/Perfil_user.cy'
+import Perfil_user from '../../support/Proyecto_Ronald/Perfil_user.cy'
 /// <reference types="cypress" />
 
 describe('Page objects Models', () =>{

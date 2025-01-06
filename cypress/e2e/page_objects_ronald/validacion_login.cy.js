@@ -1,4 +1,4 @@
-import Validacion_login from '../../support/page_objects_models/Validacion_login.cy'
+import Validacion_login from '../../support/Proyecto_Ronald/Validacion_login.cy'
 /// <reference types="cypress" />
 
 describe('Page objects Models', () =>{

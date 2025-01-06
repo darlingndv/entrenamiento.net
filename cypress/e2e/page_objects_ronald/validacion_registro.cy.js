@@ -1,4 +1,4 @@
-import Validacion_registro from '../../support/page_objects_models/Validacion_registro.cy'
+import Validacion_registro from '../../support/Proyecto_Ronald/Validacion_registro.cy'
 /// <reference types="cypress" />
 
 describe('Page objects Models', () =>{

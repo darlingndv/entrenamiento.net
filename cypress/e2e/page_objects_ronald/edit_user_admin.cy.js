@@ -1,4 +1,4 @@
-import edit_user_admin from '../../support/page_objects_models/edit_user_no_admin.cy'
+import edit_user_admin from '../../support/Proyecto_Ronald/edit_user_no_admin.cy'
 /// <reference types="cypress" />
 
 describe('Page objects Models', () =>{
