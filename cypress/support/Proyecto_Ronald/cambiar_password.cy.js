@@ -27,6 +27,8 @@ cambiar_password(){
     cy.wait(tiempo)
     cy.get('body > div > main > div > div.btn-container > div.first-btns > button:nth-child(2)').should("be.visible").click()
     cy.wait(tiempo)
+    cy.get('#togglePassword').should("be.visible").click()
+    cy.wait(tiempo)
 }
 
 }//final
