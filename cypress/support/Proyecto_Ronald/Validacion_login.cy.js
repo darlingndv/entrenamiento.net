@@ -3,7 +3,7 @@ class validacion_login {
     VisitHome(){
         let tiempo=1000
         before(()=>{
-            cy.visit('http://localhost:8081/'),
+            cy.visit('host.docker.internal:8081'),
             cy.title().should('eq','Elecciones 2024')
             cy.wait(tiempo)
             cy.get('.nav-item > .header-nav-a-link').should("be.visible").click()
