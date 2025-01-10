@@ -15,6 +15,3 @@ COPY ../ .
 
 # Ejecuta la interfaz de Cypress
 CMD ["npx", "cypress", "open"]
-
-# Instala Cypress globalmente
-RUN npm install -g cypres
