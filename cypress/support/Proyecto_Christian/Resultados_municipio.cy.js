@@ -3,7 +3,7 @@ class Resultados_municipio {
     VisitHome(){
         let tiempo=1000
         before(()=>{
-            cy.visit('http://localhost:8081/'),
+            cy.visit('http://host.docker.internal:8081/'),
             cy.title().should('eq','Elecciones Presidenciales 2024')
             cy.wait(tiempo)
             cy.get(':nth-child(2) > .nav-item > .nav-link').should("be.visible").click()

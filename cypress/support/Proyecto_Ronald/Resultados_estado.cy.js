@@ -2,7 +2,7 @@ class Resultados_estado {
     VisitHome() {
         let tiempo = 1000;
         before(() => {
-            cy.visit('http://localhost:8081/');
+            cy.visit('http://host.docker.internal:8081/');
             cy.title().should('eq', 'Elecciones 2024');
             cy.wait(tiempo);
             cy.get('.nav-item > .header-nav-a-link').should("be.visible").click();
@@ -28,7 +28,7 @@ class Resultados_estado {
         cy.wait(tiempo);
         cy.get('#btnBuscar').should("be.visible").click();
         cy.wait(tiempo);
-        cy.get('#rowsSelect').clear().should("be.visible").select("10");
+        cy.get('#rowsSelect').should("be.visible").select("10");
         cy.wait(tiempo);
         cy.get("#resultadosTableContainer").scrollTo(0, 200);
         cy.wait(tiempo);
