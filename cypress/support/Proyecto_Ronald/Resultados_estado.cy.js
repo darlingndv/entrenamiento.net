@@ -28,7 +28,7 @@ class Resultados_estado {
         cy.wait(tiempo);
         cy.get('#btnBuscar').should("be.visible").click();
         cy.wait(tiempo);
-        cy.get('#rowsSelect').clear().should("be.visible").select("10");
+        cy.get('#rowsSelect').should("be.visible").select("10");
         cy.wait(tiempo);
         cy.get("#resultadosTableContainer").scrollTo(0, 200);
         cy.wait(tiempo);

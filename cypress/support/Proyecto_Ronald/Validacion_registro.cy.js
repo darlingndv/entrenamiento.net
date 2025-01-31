@@ -20,7 +20,7 @@ Registro_validacion(){
         cy.wait(tiempo)
         cy.get('#Apellido').should("be.visible").type("A")
         cy.wait(tiempo)
-        cy.get('#Email').should("be.visible").type("A@gmail.com")
+        cy.get('#Email').should("be.visible").type("A")
         cy.wait(tiempo)
         cy.get('#passwordInput').should("be.visible").type("A")
         cy.wait(tiempo)
